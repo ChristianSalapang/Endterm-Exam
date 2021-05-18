@@ -5,13 +5,14 @@ import javax.swing.JOptionPane;
 public class AccountUnitJava {
 
     @Test
-    public void test1 () {
-
+    public void testCheck () {
             Checking CAcc = new Checking(1920593);
-            Savings SAcc = new Savings(2053859, 3.5);
-
             JOptionPane.showMessageDialog(null, CAcc.getAccInfo());
-            JOptionPane.showMessageDialog(null, SAcc.getAccInfo());
         }
 
+    @Test
+    public void testSave () {
+        Savings SAcc = new Savings(2053859, 3.5);
+        JOptionPane.showMessageDialog(null, SAcc.getAccInfo());
+    }
     }
