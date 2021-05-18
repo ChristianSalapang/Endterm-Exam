@@ -22,4 +22,6 @@ public abstract class Account
     public abstract int getAccountNumber();
     public abstract double getBalance();
 
+    public abstract String getAccInfo();
+
 }
